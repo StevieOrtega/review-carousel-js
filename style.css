@@ -12,12 +12,59 @@ hr {
   margin: auto;
 }
 
+.circle-image {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .container {
-  background-color: red;
   width: 960px;
-  margin: 0px auto 0px auto;
+  margin: 25px auto 0px auto;
 }
 
 .carousel {
-  margin-top: 25px;
+  position: relative;
+  height: 300px;
+  width: 80%;
+  margin: 20px auto;
 }
+
+#carousel-card-container {
+  background-color: antiquewhite;
+
+  border-radius: 5px;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.carousel-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* step 1 
+is to add to each carousel card the position absolute, this will place all the 
+slides/cards on top of each other and that is what we want to happen
+*/
+/* step 2
+we have to then for each slide transforms the position by 100 % to the right so that the slide will
+display side to side by
+*/
+
+/* step 3
+Use the left and right buttons now to start changing the positions of the slides */
+
+/* step 4
+Proceed to hide the x Overflow of the carousel card container so that we are unable to see 
+all except the current slide. */
